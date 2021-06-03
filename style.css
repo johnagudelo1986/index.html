@@ -372,8 +372,8 @@ footer{
     }
 
     .cont-podcast{
-        width:584px;
-        height:232px;
+        width:100%;
+        height:100%;
         margin-left: 55px;
         display: grid;
         grid-template-columns: 624px;
@@ -607,8 +607,8 @@ footer{
     }
 
     .cont-podcast{
-        width:584px;
-        height:232px;
+        width:100%;
+        height:100%;
         margin-left: 100px;
         display: grid;
         grid-template-columns: 584px 584px;
