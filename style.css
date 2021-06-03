@@ -1,0 +1,753 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #fff;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration:none;
+}
+
+.navbar{
+    background: #fff;
+}
+
+.navbar-header{
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.navbar-menu-mobile{
+    color:#000000;
+    margin-top: 16px;
+    margin-right: 36px;
+}
+
+.logo{
+    font-size: 24px;
+    margin-top:10px;
+    margin-left: 16px;
+}
+
+.navbar-container{
+    background:#0000EC;
+    position:absolute;
+    width: 100%;
+    height: 0px;
+    display:flex;
+    justify-content:space-around;
+    flex-direction: column;
+    overflow: hidden;
+    transition: height 0.5s easy
+}
+
+.navbar-link{
+    color:#fff;
+}
+
+#navbar-header:target .navbar-container{
+    height: 224px;
+}
+
+#navbar-header:target .open{
+    display: none;
+}
+
+#navbar-header:target .close{
+    display:flex;
+}
+
+.close{
+    display:none;
+}
+
+.texto-inicial{
+    padding: 29px 16px; 
+}
+
+.titulo-principal{
+    font-size: 36px;
+    color: #060A24;
+    letter-spacing: 0;
+    line-height: 42px;
+}
+
+.texto-titulo{
+    margin-top:16px;
+    margin-bottom: 36px;
+    font-size: 14px;
+    color: #060A24;
+    letter-spacing: 0;
+    line-height: 22px;
+}
+
+.boton {
+    background: #00F3BB;
+    width: 278px;
+    height: 48px;
+    border: none;
+    align-items: center;
+}
+
+.boton:hover {
+    background: rgba(0,0,0,0.3);
+    cursor: pointer;
+}
+
+.texto-boton{
+    font-size: 16px;
+    color: #060A24;
+    letter-spacing: 0;
+    text-align: center;
+    line-height: 22px;
+}
+
+#episodios{
+    padding: 0;
+    background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
+    height: 1203.5px;
+    max-width: 100%;
+    position: relative;
+}
+
+.wave{
+    margin-top: -10px;
+}
+.titulo-episodio{
+    font-size: 30px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    line-height: 42px;
+    margin-left: 16px;
+    width: 157px;
+    height: 42px;
+    margin-bottom: 21px;
+}
+
+.cont-podcast{
+    width:90%;
+    height:225px;
+    margin-left: 11px;
+
+}
+
+.img-hist{
+    margin-top: -40px;
+    width: 100%;
+    height: 519px;
+    align-items: center;
+}
+
+.titulo-historia{
+    margin-top: 27px;
+    margin-left: 16px;
+    font-size: 36px;
+    color: #060A24;
+    letter-spacing: 0;
+    line-height: 42px;
+    width: 50%;
+}
+
+.texto-historia{
+    font-size: 14px;
+    color: #060A24;
+    letter-spacing: 0;
+    line-height: 22px;
+    margin-top: 8px;
+    margin-left: 16px;
+    margin-right: 16px;
+}
+
+.titulo-entrev{
+    font-size: 36px;
+    color: #060A24;
+    letter-spacing: 0;
+    line-height: 42px;
+    width: 50%;
+    margin-top: 54px;
+    margin-left: 16px;
+    margin-bottom: 14px;
+}
+
+.columna img{
+    width: 100%;
+    height: 243px;
+    margin: 0;
+}
+
+.contenedor-temas{
+    max-width: 100%;
+}
+
+.titulo-temas{
+    font-size: 36px;
+    color: #060A24;
+    letter-spacing: 0;
+    line-height: 42px;
+    width: 288px;
+    height: 84px;
+    margin-top: 48px;
+    margin-left: 16px;
+    margin-bottom: 24px;
+}
+
+.img-temas{
+   
+    height: 104px;
+    margin-top: 49px;
+    margin-left: 108px;
+    max-width: 100%;
+    display: block;
+}
+
+.texto-temas{
+    font-family: IBMPlexSans-SemiBold;
+    font-size: 24px;
+    color: #060A24;
+    letter-spacing: 0;    
+    text-align: center;
+    margin-top: 13px;
+}
+
+.contenedor-temas{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+
+.novedades{
+    background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
+    width: 100%;
+    height: 100%;
+}
+
+.pregunta{
+    font-size: 26px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    text-align: center;
+    line-height: 42px;
+    width: 288px;    
+}
+
+.boton-final {
+    background: #00F3BB;
+    width: 278px;
+    height: 48px;
+    border: none;
+    margin-left: 16px;
+    margin-bottom: 67px;
+    margin-top: 36px;
+}
+
+.texto-boton-final{
+    font-family: IBMPlexMono-Medium;
+    font-size: 16px;
+    color: #060A24;
+    letter-spacing: 0;
+    text-align: center;
+    line-height: 22px;
+}
+
+.boton:hover {
+    background: rgba(0,0,0,0.3);
+    cursor: pointer;
+}
+
+footer{
+    background: #fff;
+    height: 100px;
+    
+    
+}
+
+.img-footer{
+    width: 16px;
+    height: 28px;
+    color: #060A24;
+    letter-spacing: 0;
+    line-height: 28px;
+    display: flex;
+    flex: auto;
+    margin-left: 30px;
+    margin-top: 16px;
+}
+
+.texto-final{
+    font-size: 14px;
+    color: #060A24;
+    letter-spacing: 0;
+    line-height: 22px;
+    text-align: center;
+    margin-top: 24px;
+}
+
+@media(min-width: 768px){
+    
+    .navbar{
+        display: flex;
+        justify-content:space-between;
+    }
+
+    .navbar-menu-mobile{
+        display: none;
+    }
+
+    .navbar-container{
+        height: auto;
+        flex-direction: row;
+        position: static;
+        width: 60%;
+        background:#fff;
+        margin-top: 26px;
+        margin-bottom: 26px;
+        margin-right: 40px;      
+        }
+
+    .navbar-link{
+        color:#000000;
+        font-size: 16px;  
+        
+    }
+
+    .logo{
+        margin-left: 50px;
+        margin-top: 22px;
+        font-size: 25px;
+        margin-bottom: 22px;
+    }
+
+    .texto-inicial{
+        margin-top: 120px;
+        margin-left: 62px;
+    }
+     
+    .titulo-principal{
+        flex-direction:row;
+        font-size: 64px;
+        color: #060A24;
+        letter-spacing: 0px;
+        line-height: 58px;
+    }
+    
+    .texto-titulo{
+        margin-bottom: 72px;
+        font-size: 16px;
+        color: #060A24;
+        letter-spacing: 0;
+        line-height: 24px;
+        width:628px;
+        height: 48px;
+    }
+    
+    .boton {
+        background: #00F3BB;
+        width: 226px;
+        height: 56px;
+        border: none;
+        margin-bottom: 5px;
+        
+    }
+
+    #episodios{
+          height: 1242.6px;
+          width: 100%;
+    }
+
+    .titulo-episodio{
+        margin-left: 62px;
+    }
+
+    .cont-podcast{
+        width:584px;
+        height:232px;
+        margin-left: 55px;
+        display: grid;
+        grid-template-columns: 624px;
+        grid-template-rows: 234px 232px 234px 234px;
+                  
+    }
+
+    .wave{
+        width: 100%;
+    }
+
+    .contenedor-historia{
+        width: 100%;
+    }
+
+    .img-hist{
+        margin-top: -60px;
+        width: 420px;
+        height: 760px;
+        margin-left: 200px;
+    }
+    
+    .titulo-historia{
+        margin-top: 50px;
+        margin-left: 62px;
+        font-size: 48px;
+        color: #060A24;
+        letter-spacing: 0;
+        line-height: 42px;
+        width: 50%;
+    }
+    
+    .texto-historia{
+        font-size: 18px;
+        color: #060A24;
+        letter-spacing: 0;
+        line-height: 24px;
+        margin-top: 24px;
+        margin-left: 62px;
+        margin-right: 100px;
+    }
+
+    .titulo-entrev{
+        font-size: 48px;
+        color: #060A24;
+        letter-spacing: 0;
+        width: 481px;
+        height: 62px;
+        margin-left: 62px;
+        margin-top: 64px;
+        margin-bottom: 36px;
+    }
+
+    .columna img{
+        width:100%;
+    }
+
+    .contenedor-img{
+        display: flex;
+        padding: 0;     
+        flex-wrap: wrap;
+        width: 100%;   
+    }
+
+    .columna{
+        flex: 33%;
+    }
+
+    .contenedor-temas{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        height: 280px;
+    }
+
+    .cont-temas{
+        width: 90%;
+    }
+
+    .titulo-temas{
+        margin-left: 62px;
+        width: 386px;
+        height: 62px;
+        font-size: 48px;
+        color: #060A24;
+        letter-spacing: 0;
+    }
+
+    .cont-temas .img-temas{
+        margin-left: 80px;
+        width: 70px;
+        height: 70px;
+    }
+
+    .cont-temas .texto-temas{
+        font-size: 18px;
+        color: #060A24;
+        letter-spacing: 0;
+        text-align: center;
+        margin-left: 65px;
+    }
+
+    .novedades{
+        width: 100%;
+    }
+
+    .pregunta{
+        font-size: 36px;
+        color: #FFFFFF;
+        letter-spacing: 0;
+        margin-left: 120px;
+        line-height: 42px;
+        width: 558px;
+        margin-top: 36px;
+        
+    }
+    
+    .boton-final {
+        background: #00F3BB;
+        width: 278px;
+        height: 48px;
+        border: none;
+        margin-left: 250px;
+    }
+    
+    .texto-boton-final{
+        font-size: 16px;
+        color: #060A24;
+        letter-spacing: 0;
+        text-align: center;
+        line-height: 22px;
+    }
+    
+    .boton:hover {
+        background: rgba(0,0,0,0.3);
+        cursor: pointer;
+    }
+    
+    .footer{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .texto-final{
+        margin-right: 200px;
+        margin-left: 50px;
+        margin-top: 40px;
+    }
+    .img-footer img{
+            margin-right: 5px;
+            margin-top: 20px;
+    }
+
+}
+
+
+
+
+@media (min-width: 1440px){
+    .navbar{
+        display: flex;
+        justify-content:space-between;
+    }
+
+    .navbar-menu-mobile{
+        display: none;
+    }
+
+    .navbar-container{
+        height: auto;
+        flex-direction: row;
+        position: static;
+        width: 60%;
+        background:#fff;
+        margin-top: 26px;
+        margin-bottom: 26px;
+        margin-right: 0;      
+        }
+
+    .navbar-link{
+        color:#000000;
+        font-size: 16px;  
+        
+    }
+
+    .logo{
+        margin-left: 50px;
+        margin-top: 22px;
+        font-size: 25px;
+        margin-bottom: 22px;
+    }
+
+    .texto-inicial{
+        margin-top: 120px;
+        margin-left: 200px;
+    }
+     
+    .titulo-principal{
+        flex-direction:row;
+        font-size: 64px;
+        color: #060A24;
+        letter-spacing: 0px;
+        line-height: 48px;
+    }
+    
+    .texto-titulo{
+        margin-bottom: 72px;
+        font-size: 16px;
+        color: #060A24;
+        letter-spacing: 0;
+        line-height: 24px;
+        width:628px;
+        height: 48px;
+    }
+    
+    .boton {
+        background: #00F3BB;
+        width: 226px;
+        height: 56px;
+        border: none;
+        margin-bottom: 5px;
+        
+    }
+
+    #episodios{
+          height: 1042.6px;
+          width: 1440px;
+    }
+
+    .titulo-episodio{
+        margin-left: 200px;
+    }
+
+    .cont-podcast{
+        width:584px;
+        height:232px;
+        margin-left: 100px;
+        display: grid;
+        grid-template-columns: 584px 584px;
+        grid-template-rows: 232px 232px;
+        column-gap: 72px;
+        row-gap: 72px;    
+    }
+
+    .wave{
+        width: 1440px;
+    }
+
+    .contenedor-historia{
+        width: 1440px;
+        display:flex;
+    }
+
+    .img-hist{
+        margin-top: -80px;
+        width: 457px;
+        height: 660px;
+        margin-left: 200px;
+    }
+    
+    .titulo-historia{
+        margin-top: 50px;
+        margin-left: 62px;
+        font-size: 48px;
+        color: #060A24;
+        letter-spacing: 0;
+        line-height: 42px;
+        width: 50%;
+    }
+    
+    .texto-historia{
+        font-size: 16px;
+        color: #060A24;
+        letter-spacing: 0;
+        line-height: 24px;
+        margin-top: 24px;
+        margin-left: 62px;
+        margin-right: 256px;
+    }
+
+    .titulo-entrev{
+        font-size: 48px;
+        color: #060A24;
+        letter-spacing: 0;
+        width: 481px;
+        height: 62px;
+        margin-left: 200px;
+        margin-top: 64px;
+        margin-bottom: 36px;
+    }
+
+    .columna img{
+        width:100%;
+    }
+
+    .contenedor-img{
+        display: flex;
+        padding: 0;     
+        flex-wrap: wrap;   
+    }
+
+    .columna{
+        flex: 33%;
+    }
+
+    
+
+
+    .titulo-temas{
+        margin-left: 200px;
+        width: 586px;
+        height: 62px;
+        font-size: 48px;
+        color: #060A24;
+        letter-spacing: 0;
+    }
+
+    
+    .novedades{
+        height: 518px;
+    }
+
+
+    
+    .cont-nov{
+        margin-left: 324px;
+    }
+    
+    .pregunta{
+        display: table-row;
+        width: 692px;
+        height: 62px;
+        font-size: 40px;
+    }
+
+    .boton-final{
+        width: 345px;
+        height: 56px;
+    }
+
+    .texto-final{
+        margin-right: 780px;
+        margin-left: 100px;
+        margin-top: 40px;
+    }
+    .img-footer img{
+            margin-right: 5px;
+            margin-top: 20px;
+    }
+
+    .cont-temas .img-temas{
+        margin-left: 150px;
+        margin-bottom: 30px;
+        width: 104px;
+        height: 104px;
+    }
+
+    
+}
+
+    
+
+
+      
+
+
+   
+    
+        
+      
+    
+
+    
+
+    
+
+    
+
