@@ -139,8 +139,8 @@ a{
 }
 
 .cont-podcast{
-    width:298px;
-    height:225px;
+    max-width:298px;
+    max-height:225px;
     margin-left: 11px;
 
 }
