@@ -108,7 +108,7 @@ a{
     cursor: pointer;
 }
 
-.boton{
+.texto-boton{
     font-size: 16px;
     color: #060A24;
     letter-spacing: 0;
@@ -139,7 +139,7 @@ a{
 }
 
 .cont-podcast{
-    width:90%;
+    width:298px;
     height:225px;
     margin-left: 11px;
 
